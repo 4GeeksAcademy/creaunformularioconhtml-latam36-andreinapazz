@@ -23,39 +23,39 @@
                     <h2 class="mb-0">Ejemplo de Pago</h2>
                 </div>
                 <div class="card-body">
-                    <div id="error-msg" class="alert alert-danger">Cierta informacion esta incompleta.</div>
+                    <div class="alert alert-danger">Cierta informacion esta incompleta.</div>
             
                       <div class="row mt-4">
                         <div class="col-sm-5 pb-3">
-                            <label for="ejemploTotal">Carta #</label> 
-                            <input class="form-control" placeholder="XXXXXXXXXXXXXXXX" type="text">
+                            <label for="carta">Carta #</label> 
+                            <input class="form-control" placeholder="XXXXXXXXXXXXXXXX" type="number">
                         </div>
                         <div class="col-sm-3 pb-3">
-                            <label for="ejemploCVC">CVC #</label> 
-                            <input class="form-control" placeholder="0000" type="text">
+                            <label for="cvc">CVC #</label> 
+                            <input class="form-control" placeholder="0000" type="number">
                         </div>
                         <div class="col-sm-4 pb-3">
-                            <label for="ejemploTotal">Total</label>
+                            <label for="total">Total</label>
                             <div class="input-group">
                                 <div class="input-group-addon">
                                     <i class="fas fa-dollar-sign"></i>
                                 </div>
-                                <input class="form-control" placeholder="Total"number">
+                                <input class="form-control" placeholder="Total" type="number">
                             </div>
                         </div>
                         <div class="col-sm-6 pb-3">
-                            <label for="ejemploNombre">Primer Nombre</label> 
+                            <label for="nombre">Primer Nombre</label> 
                             <input class="form-control" type="text">
                         </div>
                         <div class="col-sm-6 pb-3">
-                            <label for="ejemploApellido">Apellido</label> 
+                            <label for="apellido">Apellido</label> 
                             <input class="form-control" type="text">
                         </div>
                         <div class="col-sm-6 pb-3">
-                            <label for="ejemploCiudad">Ciudad</label> <input class="form-control" type="text">
+                            <label for="ciudad">Ciudad</label> <input class="form-control" type="text">
                         </div>
                         <div class="col-sm-3 pb-3">
-                            <label for="ejemplo">Estado</label> <select class="form-control custom-select">
+                            <label for="estado">Estado</label> <select class="form-control custom-select">
                             <option class="text-white bg-warning">
                             Selecciona un Estado</option>
                             <option value="AZ">
@@ -130,11 +130,11 @@
                         </select>
                         </div>
                         <div class="col-sm-3 pb-3">
-                            <label for="ejemploZip">Codigo</label> 
-                            <input class="form-control" type="text">
+                            <label for="codigoPostal">Codigo Postal</label> 
+                            <input class="form-control" type="number">
                         </div>
                         <div class="col-md-6 pb-3">
-                            <p for="exampleAccount">Aceptamos:</p>
+                            <p>Aceptamos:</p>
                             <div class="btn-group" data-toggle="buttons">
                                 <label class="btn btn-secondary">
                                     <input autocomplete="off" checked id="blue" name="options" type="radio">
@@ -155,7 +155,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 pb-3">
-                            <label for="exampleMessage">Mensaje</label> 
+                            <label for="mensaje">Mensaje</label> 
                             <textarea class="form-control" rows="3"></textarea> 
                             <small class="text-muted">Agregar cualquier nota aca.</small>
                         </div>
@@ -163,14 +163,13 @@
             </form>
                 </div>
                 <div class="card-footer">
-                    <div class="float-right">
+                    <div class="float-end">
               <button class="btn btn-secondary" type="reset">Cancelar</button> 
-                        <button id="sendForm" class="btn btn-primary" type="button">Enviar</button>
+                        <button class="btn btn-primary" type="submit">Enviar</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
